@@ -1,0 +1,77 @@
+body{
+    font-family: 'Raleway';
+    width: auto;
+    padding: 0 0.5em;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 15px;
+  
+}
+
+/*selected nav bar*/
+nav a{
+    text-decoration: none;
+    margin-right: 1em;
+
+}
+#sign_in a{
+
+    color: #0065FC;
+}
+
+#sign_in a:hover{
+    font-weight: bold;
+}
+
+#sign_in a:visited{
+    color: #0065FC;
+}
+.topnav a:hover{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 1em;
+}
+.topnav a:focus{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 1em;
+
+}
+
+/* topnav needs :visited to be black but overridden by :hover*/
+#logo{
+    width: 5em;
+    height: auto;
+}
+
+#toppage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#title{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#soustitre{
+    font-size: 11px;
+}
+
+
+.filters{
+    display: flex;
+    
+}
+
+.filters li{
+    margin-right: 2em;
+}
+
+
+
+
+

@@ -1,10 +1,10 @@
 body{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     width: auto;
     padding: 0 0.5em;
 }
 
-ul{
+ nav ul{
     list-style-type: none;
     display: flex;
     font-size: 15px;
@@ -29,11 +29,17 @@ nav a{
 #sign_in a:visited{
     color: #0065FC;
 }
+
+.topnav a:visited{
+    color: black;
+    padding-top: 1em;
+}
 .topnav a:hover{
     color: #0065FC;
     border-top: 1px solid #0065FC;
     padding-top: 1em;
 }
+
 .topnav a:focus{
     color: #0065FC;
     border-top: 1px solid #0065FC;
@@ -55,20 +61,188 @@ nav a{
 #title{
     font-size: 1em;
     font-weight: bolder;
+    margin-top: 2em;
+    margin-bottom: 4px;
+
 }
 
 #soustitre{
     font-size: 11px;
+    margin-top: 0px;
 }
 
+.search_bar{
+    display:inline-flex;
+    align-items: center;
+}
+
+#search_pointer{
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 11px 0 0 11px;
+    
+}
+
+#search_bar{    
+    border: 2px solid #f2f2f2;
+    margin-right: 0;
+    padding: 10px;
+    border-right: none;    
+    
+}
+#search_bar:focus{
+    outline: none;
+}
+
+.search_bar ::placeholder{
+    opacity: 0.3;
+
+}
+
+/* bring box and button together*/
+
+.search_button{
+    position: relative;
+    left: -4px;
+    margin-left: 0;
+    padding:12px;
+    color: #DEEBFF;    
+    font-weight: 600;
+    background-color: #0065FC;
+    border-radius: 0 11px 11px 0;
+    border: none;
+}
+
+.search_icon{
+    display: none;
+}
+
+#filter_title{
+    font-size: 17px;
+}
+
+.filters ul{
+    list-style-type: none;
+    display: flex;
+    font-weight: 900;
+
+}
 
 .filters{
     display: flex;
+    align-items: center;
+    
+        
+}
+.filters i{
+    position: relative;
+    right: 2px;    
+    color: #0065FC;
+    margin-right: .8em;    
+    border-radius: 50%;
+    padding: 19px;
+    background-color: #DEEBFF;
     
 }
 
 .filters li{
+   
+    font-size: 15px;
     margin-right: 2em;
+    border: 2px solid #dfdfdf;
+    border-radius: 40px;
+    border-left: none;
+    padding: 0 20px 0 0;
+    
+      
+}
+
+.filters a{
+    text-decoration: none;
+    color: black
+}
+.filters li:hover{
+    font-weight: bolder;
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    text-decoration: none;
+}
+
+
+
+.info{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+       
+}
+
+#info_icon{
+
+    margin-right: 10px;
+    color: #0065FC;
+    border: 1.5px solid  #dfdfdf;
+    border-radius: 50%;
+    padding: 4px 8px
+
+}
+
+@media screen and (max-width: 950px)
+{
+    /*Seperate the navigation bar*/
+    .topnav ul{
+
+    }
+
+    #search_bar{
+         border: 1px solid #f2f2f2;
+         padding-top: 12px;
+
+    }
+
+         
+    #search_pointer{
+        padding-bottom: 11px;
+    }
+
+    .search_button{
+        display: none;   
+    }
+    
+    .search_icon{
+        display: inline-flex;
+        position: relative;
+        left: -11px;
+        margin-left: 0;
+        padding:14px;
+        color: #DEEBFF;    
+        font-weight: 600;
+        background-color: #0065FC;
+        border-radius: 11px 11px 11px 11px;
+        border: none;
+
+    }
+
+    .main_titles{
+        text-align: center;
+    }
+    .search_bar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .filters{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+    }
+    .filters ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
 }
 
 

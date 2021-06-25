@@ -2,6 +2,7 @@ body{
     font-family: 'Raleway', sans-serif;
     width: 100%; 
     margin: auto;
+    margin-top: 2em;
 }
 
 header{
@@ -34,12 +35,18 @@ nav a{
     color: #0065FC;
 }
 
-#sign_in a:hover{
-    font-weight: bold;
-}
-
 #sign_in a:visited{
     color: #0065FC;
+}
+
+#sign_in a:hover{
+    color: #0054d1;
+
+}
+
+#sign_in a:active{
+    color:  #0054d1;
+    text-shadow: 0px 0px 5px #013d96;
 }
 
 .topnav a:visited{
@@ -49,13 +56,13 @@ nav a{
 .topnav a:hover{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 .topnav a:focus{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 2em;
+    padding-top: 3em;
 
 }
 
@@ -90,25 +97,33 @@ nav a{
 }
 
 /* Search Bar look out for class and id*/
+
+
+
 .search_bar{
     display:inline-flex;
     align-items: center;
+    width: 100%;
     
-    
+  
 }
 
 #search_pointer{
-    padding: 13px 16px 13px 16px;
+    padding: 17px 16px 13.5px 16px;
     background-color: #f2f2f2;
     border-radius: 11px 0 0 11px;
+    color: black;
     
 }
 
 #search_bar{    
     border: 2px solid #f2f2f2;
+    
     margin-right: 0;
-    padding: 14px 13px 11px 0;
-    border-right: none;    
+    padding: 16px 80px 13.5px 0;
+    border-right: none;  
+    font-size: 13px;
+    
     
 }
 #search_bar:focus{
@@ -116,7 +131,8 @@ nav a{
 }
 
 .search_bar ::placeholder{
-    opacity: 0.4;
+    opacity: 0.7;
+    font-size: 13px;   
 
 }
 
@@ -126,7 +142,7 @@ nav a{
     position: relative;
     left: -4px;
     margin-left: 0;
-    padding:13px 12px 12px 12px;
+    padding:15px 20px 15px 20px;
  
     color: #DEEBFF; 
     font-size: 17px;   
@@ -212,9 +228,115 @@ nav a{
     padding: 4px 8px
 
 }
+.hebergements{
+    display: flex;
+    
+}
+
+.hebergements h2{
+    margin-left: 1.5em;
+    
+}
+
+.hebergements img{
+    height: 150px;
+    border-radius: 25px;
+}
+
+.hebergements a{
+text-decoration: none;
+color: black;
+
+}
+
+.hebergements i{
+    color: #0065FC;    
+ 
+}
+
+
+
+figure{
+    color: black;
+    background-color: white;
+}
+
+figure:visited{
+    color: black;
+}
+
+
+
+.stars{
+    display: flex;
+    
+}
+
+.greystar i{
+    color: #dfdfdf;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+article{
+    background-color: #f2f2f2;
+    margin: 1em;
+    border-radius: 25px;
+    
+}
+
+.selection_marseille{
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selection_marseille li{
+
+    margin:2em;
+}
+
+aside{
+    background-color: #f2f2f2;
+    margin: 1em;
+    padding-bottom: 2em;
+    border-radius: 25px;
+    
+}
+
+.selection_populaires{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section{
+    background-color: #DEEBFF;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.activites{
+    display: flex;
+}
+
+.activites img{
+    height: 150px;
+
+}
+
 
 footer {
+    width: auto;
     padding-left: 2em;
+    padding-bottom: 3em;
+    margin-bottom: 4em;
     display: flex;
     font-size: 12px;    
     background-color: #f2f2f2;
@@ -225,13 +347,15 @@ footer h3{
 }
 
 footer ul{
-    margin-right: 10em;
+    padding-left: 0px;
+    margin-right: 20em;
+    
 }
 
 footer li{
     list-style-type: none;
-    position: relative;
-    left: -3.3em;
+    font-size: 14px;
+        
     margin-top: 1em;
     
 
@@ -255,6 +379,7 @@ footer a:visited{
 {
     body{
         width: auto;
+        margin-top: 2em;
         margin-left: 1em;
         margin-right: 1em;
         text-align: center;
@@ -266,10 +391,13 @@ footer a:visited{
     }
 
     #logo{
-        position: relative;
-        top: -15px;
+        top: -15px;       
     }
-
+    
+    .top_page{
+        display: flex;
+        flex-wrap: wrap;        
+    }
 
 
     nav{
@@ -277,24 +405,25 @@ footer a:visited{
         flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: flex-end;
-        border-top: none;
-        
+        border-top: none;   
     }
 
+
     /*position center*/
+
+    .topnav ul{
+        padding-left: 0px;        
+    }
+
     .topnav {
         margin-top: 2em;
-        display: flex;
-        justify-content: center;
-        
+        padding-left: 0px;
     }
-    
-    
+
     .topnav a:hover{
         border-top: none;
         padding-bottom: 1em;
-        border-bottom: 3px solid #0065FC;
-        
+        border-bottom: 3px solid #0065FC;  
     }
 
     .topnav a:focus{
@@ -308,6 +437,7 @@ footer a:visited{
     .main_titles{
         text-align: center;
         margin-top: 1.5em;
+        width: 100%;
 
 
 
@@ -318,23 +448,27 @@ footer a:visited{
         
          border: 1px solid #f2f2f2;
          padding-top: 12px;
+         
 
     }
          
     #search_pointer{
-        padding-bottom: 11px;
+        padding-bottom: 10.5px;
+        padding-top: 14px;
     }
 
     .search_button{
-        display: none;   
+        display: none;
+          
     }
     
     .search_icon{
         display: inline-flex;
         position: relative;
-        left: -11px;
+        left: -13px;
+        bottom: -1px;
         margin-left: 0;
-        padding:14px;
+        padding:16px;
         color: #DEEBFF;    
         font-weight: 600;
         background-color: #0065FC;
@@ -348,6 +482,7 @@ footer a:visited{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     
 /*filters*/
@@ -391,11 +526,21 @@ footer a:visited{
         flex-wrap: wrap;
     }
 
-    
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-   
+    footer h3{
+        text-align: left;
+    }
 
-    
+    footer li{
+        text-align: left;
+    }
+        
 
 }
 

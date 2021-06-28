@@ -9,19 +9,26 @@ header{
     margin-top: auto;
     margin-left: 2em;
     
+    
 }
 
-
 nav{
+    
     display: flex;
-    font-size: 15px;
+    justify-content: flex-end;
+    font-size: 15px;  
+
 }
 
  nav ul{
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 
 }
+
+
+
 
 /*selected nav bar*/
 nav a{
@@ -66,20 +73,17 @@ nav a{
 
 }
 
+.top_page{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* topnav needs :visited to be black but overridden by :hover*/
 #logo{
     width: 6em;
     height: 5em;
-    position: relative;
-    top: -10px;
-   
-}
-
-#top_page{
-    
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2em;
     
 }
 
@@ -228,6 +232,41 @@ nav a{
     padding: 4px 8px
 
 }
+
+
+
+.hostel_cannebiere{
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    height: 10em;
+
+}
+
+.hotel_port{
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.hotel_mouettes{
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.hotel_mer{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.hostel_panier{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.hotel_amina{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.bottom_img{
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    padding: 0 2px 2px 2px;
+    
+}
 .hebergements{
     display: flex;
     
@@ -258,7 +297,7 @@ color: black;
 
 figure{
     color: black;
-    background-color: white;
+ 
 }
 
 figure:visited{
@@ -298,6 +337,12 @@ article{
 .selection_marseille li{
 
     margin:2em;
+}
+
+.selection_marseille figure{
+    border-radius: 12px;
+    border: 3px solid white;
+
 }
 
 aside{
@@ -386,34 +431,23 @@ footer a:visited{
 
     }
 
-    header{
-        width: fit-content;
-    }
-
-    #logo{
-        top: -15px;       
-    }
-    
     .top_page{
-        display: flex;
-        flex-wrap: wrap;        
-    }
-
-
-    nav{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        align-items: flex-end;
+
+    }
+
+    
+    nav{
+        
         border-top: none;   
     }
 
 
     /*position center*/
 
-    .topnav ul{
-        padding-left: 0px;        
-    }
+    
 
     .topnav {
         margin-top: 2em;
@@ -438,17 +472,13 @@ footer a:visited{
         text-align: center;
         margin-top: 1.5em;
         width: 100%;
-
-
-
     }
 
 /*Search bar*/
     #search_bar{
         
          border: 1px solid #f2f2f2;
-         padding-top: 12px;
-         
+         padding-top: 12px;         
 
     }
          

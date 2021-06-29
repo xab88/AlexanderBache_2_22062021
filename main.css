@@ -10,6 +10,7 @@ header{
     margin-left: 2em;
     
     
+    
 }
 
 nav{
@@ -233,60 +234,117 @@ nav a{
 
 }
 
-
+/*Sections*/
 
 .hostel_cannebiere{
-    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    height: 10em;
+    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
+    background-size: contain;
+    height: 200px;
+
 
 }
 
 .hotel_port{
-    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
+    background-size: contain;
+    height: 200px;
+
 }
 
 .hotel_mouettes{
-    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
+    background-size: contain;
+    height: 200px;
+   
 }
 
 .hotel_mer{
-    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
+    background-size: contain;
+    height: 200px;
+    
 }
 
 .hostel_panier{
-    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    
 }
 
 .hotel_amina{
-    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
+    background-size: cover;
+
+    
+    height: 200px;
+    
 }
 
 .bottom_img{
+    
     background-color: white;
     border-radius: 0 0 12px 12px;
+    padding: 0 2px 2px 2px; 
+    height: 69px;
+}
+
+.hotel_soleil{
+    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 120px;
+    
+    
+
+}
+
+.hotel_coeur{
+    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
+    background-size: cover;  
+    margin-top: 1em;
+    height: 120px;  
+
+}
+
+.hotel_bleublanc{
+    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 1em; 
+    margin-bottom: 1em;
+    height: 140px; 
+
+   
+}
+
+.right_img{
+    background-color: white;
+    border-radius: 0 12px 12px 0px;
     padding: 0 2px 2px 2px;
+    width: 12em; 
     
 }
+
 .hebergements{
+    width: fit-content;
     display: flex;
     
 }
 
 .hebergements h2{
     margin-left: 1.5em;
+    margin-top: 1.5em;
+    font-size: 22px;
     
 }
 
-.hebergements img{
-    height: 150px;
-    border-radius: 25px;
-}
+
 
 .hebergements a{
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 
 }
+
 
 .hebergements i{
     color: #0065FC;    
@@ -297,7 +355,7 @@ color: black;
 
 figure{
     color: black;
- 
+    margin: 0;
 }
 
 figure:visited{
@@ -326,6 +384,7 @@ article{
     margin: 1em;
     border-radius: 25px;
     
+    
 }
 
 .selection_marseille{
@@ -334,21 +393,48 @@ article{
     flex-wrap: wrap;
 }
 
-.selection_marseille li{
-
-    margin:2em;
-}
 
 .selection_marseille figure{
-    border-radius: 12px;
-    border: 3px solid white;
+    border-radius: 20px;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    
 
 }
 
+.selection_marseille a{   
+
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    width: 14em;
+}
+
+.marseille h3{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    
+}
+
+.marseille p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    
+}
+
+#subtitle{
+    margin-left: 1.5em;
+}
+
+
 aside{
+    width: 50%;
     background-color: #f2f2f2;
     margin: 1em;
-    padding-bottom: 2em;
     border-radius: 25px;
     
 }
@@ -357,8 +443,46 @@ aside{
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 
 }
+
+.selection_populaires figure{
+    display: flex;
+    flex-direction: row-reverse;    
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
+
+
+#populaires_icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#populaires_icone i{
+    color: black;
+    font-size: 22px;
+    margin-right: 1em;
+    position: relative;
+    bottom: -7px;
+    
+}
+
+.selection_populaires h3{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.selection_populaires p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 
 section{
     background-color: #DEEBFF;
@@ -444,6 +568,15 @@ footer a:visited{
         border-top: none;   
     }
 
+    #logo{
+        align-self: flex-start;
+    }
+
+    #sign_in{
+        position: relative;
+        top: -4em;
+    }
+
 
     /*position center*/
 
@@ -452,12 +585,16 @@ footer a:visited{
     .topnav {
         margin-top: 2em;
         padding-left: 0px;
+        text-align: center;
+        
     }
 
     .topnav a:hover{
         border-top: none;
         padding-bottom: 1em;
-        border-bottom: 3px solid #0065FC;  
+        border-bottom: 3px solid #0065FC;
+        
+
     }
 
     .topnav a:focus{

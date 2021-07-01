@@ -1,15 +1,18 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 100%; 
+    width: 1440px; 
     margin: auto;
     margin-top: 2em;
 }
 
+strong{
+
+font-weight: bold;
+}
+
 header{
     margin-top: auto;
-    margin-left: 2em;
-    
-    
+    margin-left: 2em;    
     
 }
 
@@ -20,6 +23,8 @@ nav{
     font-size: 15px;  
 
 }
+
+
 
  nav ul{
     list-style-type: none;
@@ -41,6 +46,7 @@ nav a{
 #sign_in a{
     font-weight: bolder;
     color: #0065FC;
+    padding-bottom: 0;
 }
 
 #sign_in a:visited{
@@ -239,45 +245,58 @@ nav a{
 .hostel_cannebiere{
     background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
     background-size: contain;
-    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center -1.3em;
+    height: 170px;
+    
 
 
 }
 
 .hotel_port{
     background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
-    background-size: contain;
-    height: 200px;
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center -1.2em;    
+    height: 170px;
 
 }
 
 .hotel_mouettes{
     background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
-    background-size: contain;
-    height: 200px;
-   
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center -2.5em;    
+    height: 170px;
 }
 
 .hotel_mer{
     background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
-    background-size: contain;
-    height: 200px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center -3.5em;    
+    height: 170px;
     
 }
 
 .hostel_panier{
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat;
+    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
     background-size: cover;
-    height: 200px;
+    background-repeat: no-repeat;
+    background-position: -2em -2em ;
+    
+    height: 170px;
+   
+    
     
 }
 
 .hotel_amina{
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
-    background-size: cover;
-
-    
-    height: 200px;
+    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center -7em;    
+    height: 170px;
     
 }
 
@@ -286,8 +305,15 @@ nav a{
     background-color: white;
     border-radius: 0 0 12px 12px;
     padding: 0 2px 2px 2px; 
-    height: 69px;
+    height: 65px;
+    padding-left: 0.5em;
 }
+
+.stars{
+    font-size: 13px;
+}
+
+
 
 .hotel_soleil{
     background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
@@ -311,7 +337,7 @@ nav a{
     background-size: cover;
     margin-top: 1em; 
     margin-bottom: 1em;
-    height: 140px; 
+    height: 120px; 
 
    
 }
@@ -356,6 +382,7 @@ nav a{
 figure{
     color: black;
     margin: 0;
+    box-shadow: 3px 3px 10px #dbdbdb;
 }
 
 figure:visited{
@@ -366,6 +393,8 @@ figure:visited{
 
 .stars{
     display: flex;
+    
+    
     
 }
 
@@ -382,8 +411,7 @@ figure:visited{
 article{
     background-color: #f2f2f2;
     margin: 1em;
-    border-radius: 25px;
-    
+    border-radius: 25px;    
     
 }
 
@@ -432,10 +460,11 @@ article{
 
 
 aside{
-    width: 50%;
+    width: 65%;
     background-color: #f2f2f2;
     margin: 1em;
     border-radius: 25px;
+    padding-bottom: 1em;
     
 }
 
@@ -562,6 +591,10 @@ footer a:visited{
 
     }
 
+    .top_mobile{
+        justify-content: space-between;
+    }
+
     
     nav{
         
@@ -575,6 +608,7 @@ footer a:visited{
     #sign_in{
         position: relative;
         top: -4em;
+        
     }
 
 
@@ -584,30 +618,37 @@ footer a:visited{
 
     .topnav {
         margin-top: 2em;
-        padding-left: 0px;
-        text-align: center;
-        
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: left;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 1.5em;
     }
+
+    
+ 
 
     .topnav a:hover{
         border-top: none;
-        padding-bottom: 1em;
+        padding-bottom: 1.5em;
         border-bottom: 3px solid #0065FC;
+        
+        
         
 
     }
 
     .topnav a:focus{
         border-top: none;
-        padding-bottom: 1em;
         border-bottom: 3px solid #0065FC;
+ 
     }
 
 
 /*title*/
     .main_titles{
         text-align: center;
-        margin-top: 1.5em;
+        margin-top: 1em;
         width: 100%;
     }
 

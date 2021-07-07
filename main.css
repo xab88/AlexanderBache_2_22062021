@@ -46,7 +46,6 @@ nav a{
 #sign_in a{
     font-weight: bolder;
     color: #0065FC;
-    padding-bottom: 0;
 }
 
 #sign_in a:visited{
@@ -120,7 +119,7 @@ nav a{
 }
 
 #search_pointer{
-    padding: 17px 16px 13.5px 16px;
+    padding: 18px 16px 13.5px 16px;
     background-color: #f2f2f2;
     border-radius: 11px 0 0 11px;
     color: black;
@@ -131,7 +130,7 @@ nav a{
     border: 2px solid #f2f2f2;
     
     margin-right: 0;
-    padding: 16px 80px 13.5px 0;
+    padding: 16px 80px 15px 0;
     border-right: none;  
     font-size: 13px;
     
@@ -143,7 +142,8 @@ nav a{
 
 .search_bar ::placeholder{
     opacity: 0.7;
-    font-size: 13px;   
+    font-size: 13px; 
+      
 
 }
 
@@ -283,11 +283,8 @@ nav a{
     background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -2em -2em ;
-    
-    height: 170px;
-   
-    
+    background-position: -2em -2em ;    
+    height: 170px;  
     
 }
 
@@ -300,8 +297,7 @@ nav a{
     
 }
 
-.bottom_img{
-    
+.bottom_img{    
     background-color: white;
     border-radius: 0 0 12px 12px;
     padding: 0 2px 2px 2px; 
@@ -311,47 +307,49 @@ nav a{
 
 .stars{
     font-size: 13px;
+    
 }
-
 
 
 .hotel_soleil{
-    background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
-    background-size: contain;
-    height: 120px;
-    
-    
-
+    height: 130px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.hotel_coeur{
-    background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
-    background-size: contain;  
-    margin-top: 1em;
-    height: 120px;  
-
+.hotel_coeur{   
+    height: 130px;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
 .hotel_bleublanc{
-    background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
-    background-size:contain;
-  
-    margin-top: 1em; 
-    margin-bottom: 1em;
-    height: 120px;    
+    height: 130px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.selection_populaires img{
+    width: 150px;    
+    object-fit: cover;
+    object-position: center;  
+    overflow: hidden;  
+    border-radius: 20px 0 0 20px;
+    
+}
+
+
 
 
 .right_img{
     background-color: white;
     border-radius: 0 12px 12px 0px;
-    padding: 0 2px 2px 2px;
-    width: 12em;
+    padding: 0 2px 2px 2px;   
         
 }
 
-.hebergements{
-    width: fit-content;
+.hebergements{    
     display: flex;
     
 }
@@ -400,14 +398,12 @@ figure:visited{
     color: #dfdfdf;
 }
 
-.rightimg_stars{
-    position: relative;
-    top: 1em;
-}
+
 
 article{
-    background-color: #f2f2f2;
-    margin: 1em;
+    width: 65%;
+    background-color: #f2f2f2;   
+    margin: 1em 2em 1em 1em;
     border-radius: 25px;    
     
 }
@@ -423,29 +419,28 @@ article{
     border-radius: 20px;
     border: 4px solid white;
     display: flex;
-    flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;    
 
 }
 
 .selection_marseille a{
     margin-bottom: 2em;
     margin-left: 2em;
-    width: 14em;
+    width: 15em;
 }
 
 .marseille h3{
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 18px;
     
 }
 
 .marseille p{
     margin-top: 0px;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 16px;
     
 }
 
@@ -455,11 +450,12 @@ article{
 
 
 aside{
-    width: 65%;
+    width: 35%;
     background-color: #f2f2f2;
     margin: 1em;
     border-radius: 25px;
-    padding-bottom: 1em;
+    padding: 0 1em 2em 1em;
+    
     
 }
 
@@ -479,19 +475,20 @@ aside{
     border-radius: 20px;
     border: 4px solid white;
     
+    
 }
 
 figcaption.right_img{
-    padding-left: 1em;
-    padding-right: 2em;
-    width: 55%;
+    padding-left: 1em;    
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 }
 
 figcaption.right_img h3{
     margin-top: 0.3em;
+    font-size: 21px;
 }
 
 
@@ -511,7 +508,9 @@ figcaption.right_img h3{
 }
 
 .selection_populaires a{
-    margin-top: 0.5em;
+    margin-top: 1.5em;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .selection_populaires h3{
@@ -523,8 +522,6 @@ figcaption.right_img h3{
     margin-top: 0px;
     margin-bottom: 5px;
 }
-
-
 
 
 section{
@@ -678,17 +675,20 @@ footer li{
     font-size: 14px;        
     margin-top: 1em;
     
+    
 
 }
 
 footer a{
     text-decoration: none;
+    color: black;
     
 
 }
 
 footer li:hover{
     text-decoration: underline;
+    color: black;
 }
 
 footer a:visited{
@@ -779,13 +779,14 @@ footer a:visited{
     #search_bar{
         
          border: 1px solid #f2f2f2;
-         padding-top: 12px;         
+         padding-top: 13px;  
+               
 
     }
          
     #search_pointer{
-        padding-bottom: 10.5px;
-        padding-top: 14px;
+        padding-bottom: 13px;
+        padding-top: 13px;
     }
 
     .search_button{
@@ -814,6 +815,8 @@ footer a:visited{
         justify-content: center;
         align-items: center;
         width: 100%;
+        
+        
     }
     
 /*filters*/
@@ -822,6 +825,7 @@ footer a:visited{
         display: flex;
         flex-direction: column;
         text-align: justify;
+        flex-wrap: wrap;
         
       
     }
@@ -832,8 +836,8 @@ footer a:visited{
     }
 
     .filters ul{
-        display: flex;
-        flex-wrap:wrap;
+        
+        flex-wrap: wrap;
         align-content: space-between;
         position: relative;
         left: -2.5em;

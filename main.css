@@ -584,84 +584,100 @@ footer a:visited{
 
 
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 900px)
 {
         body{
             width: 320px;
-            margin-top: 1em;
-            
-            
-            text-align: center;
+            margin: auto;            
         }
 
-        .top_page{
-            display: flex;
-            flex-wrap: wrap;
+        .top_page{           
             flex-direction: column-reverse;
         }
 
-    
-        nav{
-            
-            border-top: none; 
-              
+        nav{            
+            border-top: none;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        nav ul{
+            width: 320px;
+            padding-left: 0;
+            position: relative;
+            left: -3em;
         }
     
         #logo{
             align-self: flex-start;
+            position: absolute;
+            top: -20px;
+            left: 10px;
         }
     
         #sign_in{
-            position: absolute;
-            top: 38px;
-            right: 5px;
-            
+            align-self: flex-end;
         }
+        
     
-        /*position center*/    
+        /*position center*/       
     
         .topnav {
-            margin-top: 1em;
-            
-           
-            text-align: left;
             border-bottom: 3px solid #f2f2f2;
-            padding-bottom: 1.5em;
+            padding-bottom: 1em;
+        }
+        
+        .topnav ul{
+            width: fit-content;
+            margin-left: 0;
+            padding-left: 0;
         }
 
-        ul{
-            width: 320px;
-            margin-left: 0;
-        }
-    
         .topnav a{
-            width: 100%;
-        } 
-    
+            margin-right: 0;            
+        }
+
+        #herber1{
+            width: 50%;
+            
+        }
+       
         .topnav a:hover{
             border-top: none;
-            padding-bottom: 1.5em;
+            padding-bottom: 1em;
             border-bottom: 3px solid #0065FC;
         }
     
         .topnav a:focus{
             border-top: none;
             border-bottom: 3px solid #0065FC;
+            font-weight: bold;
+        }
+
+        .topnav a:active{
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
+            font-weight: bold;
         }
 
 
     /*title*/
-        .main_titles{
-            text-align: justify;
-            margin-top: 1em;
-            width: 320px;
+
+        #title{
+            width: 250px;
+            font-size: 18px;            
+        }
+
+        #soustitre{
+            font-size: 13px;
+            margin-top: 0.8em;
         }
     
     /*Search bar*/
         #search_bar{
             border: 1px solid #f2f2f2;
-            padding-top: 13px;                 
-    
+            padding-top: 13px;
+            width: 100px;
         }
              
         #search_pointer{
@@ -670,8 +686,7 @@ footer a:visited{
         }
     
         .search_button{
-            display: none;
-              
+            display: none;              
         }
         
         .search_icon{
@@ -686,18 +701,8 @@ footer a:visited{
             background-color: #0065FC;
             border-radius: 11px 11px 11px 11px;
             border: none;
-    
         }
     
-     
-        .search_bar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            
-            
-        }
         
     /*filters*/
        
@@ -706,13 +711,10 @@ footer a:visited{
             flex-direction: column;
             text-align: justify;
             flex-wrap: wrap;
-            
-          
         }
         
         #filter_title{
-            align-self: flex-start;
-            
+            align-self: flex-start;            
         }
     
         .filters ul{
@@ -739,24 +741,73 @@ footer a:visited{
             flex-wrap: wrap;
         }
 
+        .info p{
+            text-align: left;
+        }
+
         /*hebergement*/
 
-        .hebergements{
-            display: flex;
-            flex-direction: column-reverse;
+        aside{
+            width: 320px;
+            padding: 0 0 2em 0;
+            margin: 0;
+            border-radius: 0;
         }
+
         .selection_populaires{
-            flex-direction: column-reverse;
-            background-size: contain;
-         
+            flex-direction: column; 
+            align-items: center;
+            padding: 2px;
+
+        }
+
+        .selection_populaires h3{
+            font-size: 15px;
+
+        }
+
+        .selection_populaires p{
+            font-size: 12px;
         }
 
         .selection_populaires figure{
-            width: 256px;
+            width: 300px;
+
         }
 
+        article{
+            width: 320px;
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 0;
+            background-color: white;
+        }
+
+        .marseille h2{
+            margin-left: 0.5em;
+        }
+
+        .hebergements figure{
+            width: 300px;
+            background-size: cover;
+            
+            
+        }
+
+        .selection_marseille{
+            padding-left: 0;
+            justify-content: left;
+        }
+         
 
 
+        .hebergements{
+            
+            display: flex;
+            flex-direction: column-reverse;
+            
+        }
+        
 
         /*Activités*/
 
@@ -784,18 +835,33 @@ footer a:visited{
         /*Footer*/
     
         footer{
-            width: 100%;
+            width: 320px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            padding-left: 0;
+            box-shadow: -1px 1px 2px gray;
+            
         }
     
         footer h3{
             text-align: left;
+            padding-left: 1em;
         }
     
         footer li{
             text-align: left;
+        }
+
+        footer li{
+            width: 300px;
+            padding-left: 1em;
+            
+        }
+        
+        .footer_links{
+            width: 320px;
+            padding-left: 0;
         }
             
     

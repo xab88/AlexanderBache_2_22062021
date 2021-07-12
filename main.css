@@ -255,71 +255,18 @@ figure:visited{
 
 /*Selection Marseille*/
 
-.hostel_cannebiere{
-    background: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center -1.3em;
-    height: 170px;
-}
-
-.hotel_port{
-    background: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat;
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: center -1.2em;    
-    height: 170px;
-
-}
-
-.hotel_mouettes{
-    background: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center -2.5em;    
-    height: 170px;
-}
-
-.hotel_mer{
-    background: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center -3.5em;    
-    height: 170px;
-    
-}
-
-.hostel_panier{
-    background: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -2em -2em ;    
-    height: 170px;  
-    
-}
-
-.hotel_amina{
-    background: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center -7em;    
-    height: 170px;
-    
-}
-
-.bottom_img{    
-    background-color: white;
-    border-radius: 0 0 12px 12px;
-    padding: 0 2px 2px 2px; 
-    height: 65px;
-    padding-left: 0.5em;
-}
-
 article{
     width: 65%;
     background-color: #f2f2f2;   
     margin: 1em 2em 1em 1em;
     border-radius: 25px;    
+}
+
+.selection_marseille img{        
+    object-fit: cover;
+    object-position: center;  
+    overflow: hidden;  
+    border-radius: 20px 20px 0 0 ;    
 }
 
 .selection_marseille{   
@@ -332,12 +279,21 @@ article{
     border: 4px solid white;
     display: flex;
     flex-direction: column-reverse;
+    height: 170px;
 }
 
 .selection_marseille a{
     margin-bottom: 2em;
     margin-left: 2em;
     width: 15em;
+}
+
+.bottom_img{    
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    padding: 0 2px 2px 2px; 
+    height: 65px;
+    padding-left: 0.5em;
 }
 
 .marseille h3{
@@ -443,6 +399,7 @@ aside{
 }
 
 .right_img{
+    
     background-color: white;
     border-radius: 0 12px 12px 0px;
     padding: 0 2px 2px 18px;         
@@ -582,41 +539,68 @@ footer a:visited{
     color:black;    
 }
 
+@media  screen and (max-width: 1412px) 
+{
+    body{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1367px)
+{
+    aside{
+        width: 65%;
+    }    
+}
 
 
-@media screen and (max-width: 900px)
+
+
+@media screen and (max-width: 1000px)
 {
         body{
-            width: 320px;
-            margin: auto;            
+            width: auto;
+            min-width: 320px;
+            margin-left: 0;
+            margin-top: auto;            
         }
 
         .top_page{           
             flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
         }
 
-        nav{            
+        nav{   
+            width: 100%;         
             border-top: none;
             display: flex;
             flex-direction: column-reverse;
         }
 
         nav ul{
-            width: 320px;
-            padding-left: 0;
-            position: relative;
-            left: -3em;
+           align-self: center; 
+           position: relative;
+           left: -2em;
+          
         }
-    
+
+        
+
+        
         #logo{
             align-self: flex-start;
             position: absolute;
             top: -20px;
-            left: 10px;
+           
         }
     
         #sign_in{
             align-self: flex-end;
+            margin-right: 10px;
+            
+            
         }
         
     
@@ -627,20 +611,12 @@ footer a:visited{
             padding-bottom: 1em;
         }
         
-        .topnav ul{
-            width: fit-content;
-            margin-left: 0;
-            padding-left: 0;
-        }
-
+      
         .topnav a{
             margin-right: 0;            
         }
 
-        #herber1{
-            width: 50%;
-            
-        }
+        
        
         .topnav a:hover{
             border-top: none;
@@ -664,7 +640,7 @@ footer a:visited{
     /*title*/
 
         #title{
-            width: 250px;
+            width: 100%;
             font-size: 18px;            
         }
 
@@ -674,11 +650,15 @@ footer a:visited{
         }
     
     /*Search bar*/
+
+       
         #search_bar{
             border: 1px solid #f2f2f2;
             padding-top: 13px;
-            width: 100px;
+            width:100px;           
         }
+
+        
              
         #search_pointer{
             padding-bottom: 13px;
@@ -748,17 +728,15 @@ footer a:visited{
         /*hebergement*/
 
         aside{
-            width: 320px;
+            width: auto;
             padding: 0 0 2em 0;
             margin: 0;
             border-radius: 0;
         }
 
-        .selection_populaires{
-            flex-direction: column; 
-            align-items: center;
+        .selection_populaires{ 
+            
             padding: 2px;
-
         }
 
         .selection_populaires h3{
@@ -770,13 +748,25 @@ footer a:visited{
             font-size: 12px;
         }
 
-        .selection_populaires figure{
-            width: 300px;
-
+        .selection_populaires a{
+            width: 90%;
+        
         }
 
+        .right_img{
+            width: 100%;
+        
+        }
+
+        .selection_populaires img{
+            width: 100%;
+             
+        }
+
+        
+
         article{
-            width: 320px;
+            width: auto;
             margin-left: 0;
             margin-right: 0;
             border-radius: 0;
@@ -788,54 +778,81 @@ footer a:visited{
         }
 
         .hebergements figure{
-            width: 300px;
-            background-size: cover;
-            
-            
+            width: 290px;
+            background-size: cover;                
         }
 
-        .selection_marseille{
-            padding-left: 0;
-            justify-content: left;
+        .selection_marseille{            
+            justify-content: space-around;
+            position: relative;
+            left: -3em;
         }
-         
 
-
-        .hebergements{
-            
-            display: flex;
-            flex-direction: column-reverse;
-            
-        }
         
+
+        .hebergements{            
+            display: flex;
+            flex-direction: column-reverse;            
+        }        
 
         /*Activités*/
 
+        section{
+            width: auto;
+            padding:0.5em;
+            margin: 0;
+        }
+
         section h2{
             text-align: left;
+            margin-left: 0px;
         }
 
         .activites{
             display: flex;
             flex-direction: column;
-            
+            flex-wrap: wrap-reverse;            
+        }
+
+        .activites a{
+            margin-top: 1em;
         }
 
         .activites img{
-            width: 256px;
+            width: auto;
             height: 102px;
         }
 
         .activites figure{
-            height:152px;
-            margin-top: 1em;
+            height:152px;            
 
+        }
+
+        .vieux_port img{
+            object-position: 0;
+            
+        }
+
+        .frioul img{
+            object-position: 0;
+        }
+
+        .calanques img{
+            object-position: 0 -15em;
+        }
+
+        .notre_dame img{
+            object-position: 0 -4em;
+        }
+
+        .longchamp img{
+            object-position: 0 -12em;
         }
 
         /*Footer*/
     
         footer{
-            width: 320px;
+            width: auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -855,19 +872,28 @@ footer a:visited{
 
         footer li{
             width: 300px;
-            padding-left: 1em;
-            
+            padding-left: 1em;            
         }
         
         .footer_links{
             width: 320px;
             padding-left: 0;
         }
-            
-    
 }
 
 
 
+@media screen and (max-width:600px)
+{
+        .selection_marseille{
+            flex-direction: column;
+            align-items: center;
+        }
 
+        
+        #subtitle{
+           position: relative;
+           right: -7em; 
+        }
+}
 

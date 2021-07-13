@@ -73,7 +73,7 @@ nav a{
 
 .top_page{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -100,8 +100,9 @@ nav a{
 .search_bar{
     display:inline-flex;
     align-items: center;
-    width: 100%;  
 }
+
+
 
 #search_pointer{
     padding: 18px 17px 13.5px 16px;
@@ -113,7 +114,7 @@ nav a{
 #search_bar{    
     border: 2px solid #f2f2f2;    
     margin-right: 0;
-    padding: 16px 80px 15px 0;
+    padding: 16px 10px 15px 10px;
     border-right: none;  
     font-size: 13px;    
 }
@@ -123,8 +124,19 @@ nav a{
 }
 
 .search_bar ::placeholder{
-    opacity: 0.7;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.9;
     font-size: 13px;
+}
+
+.search_bar ::-webkit-input-placeholder{
+    color: black;
+    font-weight: 800;
+}
+
+.search_bar ::-moz-placeholder{
+    color: black;
+    font-weight: 800;
 }
 
 
@@ -472,6 +484,16 @@ section h2{
     justify-content: space-between;
 }
 
+.group1{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.group2{
+    display: flex;
+}
+
 .bigrow{
     height: 220px;
 }
@@ -543,19 +565,27 @@ footer a:visited{
 {
     body{
         width: auto;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 1367px)
 {
     aside{
         width: 65%;
-    }    
+    }   
 }
 
+@media screen and (max-width:1225px)
+{
+    article{
+        padding-right: 1em;
+    }
 
-
+    aside{
+        width: 75%;
+    }
+    
+}
 
 @media screen and (max-width: 1000px)
 {
@@ -570,6 +600,7 @@ footer a:visited{
             flex-direction: column-reverse;
             align-items: center;
             width: 100%;
+            margin-top: 1em;
         }
 
         nav{   
@@ -581,30 +612,30 @@ footer a:visited{
 
         nav ul{
            align-self: center; 
-           position: relative;
-           left: -2em;
-          
+           padding-left: 0;
+           width: 400px;
+                   
         }
 
-        
+        nav li{
+            width: 200px;
+            text-align: center;
+        }
 
-        
+        nav a{
+            width: 100%;
+        }
+
         #logo{
             align-self: flex-start;
             position: absolute;
-            top: -20px;
-           
+            top: -3px;           
         }
     
         #sign_in{
             align-self: flex-end;
-            margin-right: 10px;
-            
-            
-        }
-        
-    
-        /*position center*/       
+            margin-right: 10px;            
+        }      
     
         .topnav {
             border-bottom: 3px solid #f2f2f2;
@@ -614,9 +645,7 @@ footer a:visited{
       
         .topnav a{
             margin-right: 0;            
-        }
-
-        
+        }        
        
         .topnav a:hover{
             border-top: none;
@@ -655,10 +684,8 @@ footer a:visited{
         #search_bar{
             border: 1px solid #f2f2f2;
             padding-top: 13px;
-            width:100px;           
-        }
-
-        
+            width: auto;           
+        }        
              
         #search_pointer{
             padding-bottom: 13px;
@@ -736,7 +763,8 @@ footer a:visited{
 
         .selection_populaires{ 
             
-            padding: 2px;
+            padding: 2px;            
+            align-items: center;
         }
 
         .selection_populaires h3{
@@ -760,6 +788,7 @@ footer a:visited{
 
         .selection_populaires img{
             width: 100%;
+            max-width: 200px;
              
         }
 
@@ -778,7 +807,7 @@ footer a:visited{
         }
 
         .hebergements figure{
-            width: 290px;
+            width: auto;
             background-size: cover;                
         }
 
@@ -848,6 +877,17 @@ footer a:visited{
         .longchamp img{
             object-position: 0 -12em;
         }
+        
+}
+
+
+
+@media screen and (max-width:600px)
+{
+        .selection_marseille{
+            flex-direction: column;
+            align-items: center;
+        }
 
         /*Footer*/
     
@@ -878,22 +918,6 @@ footer a:visited{
         .footer_links{
             width: 320px;
             padding-left: 0;
-        }
-}
-
-
-
-@media screen and (max-width:600px)
-{
-        .selection_marseille{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        
-        #subtitle{
-           position: relative;
-           right: -7em; 
         }
 }
 

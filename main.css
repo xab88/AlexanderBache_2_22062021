@@ -1,6 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     width: 1440px; 
+    min-width: 320px;
     margin: auto;
     margin-top: 2em;
 }
@@ -456,7 +457,7 @@ section h2{
 
 .bigcolumn img{
     height: 350px;   
-    width: 320px; 
+    width: 300px; 
     object-fit: cover;
     object-position: center;
     overflow: hidden;
@@ -485,13 +486,16 @@ section h2{
 }
 
 .group1{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 
 .group2{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
 }
 
 .bigrow{
@@ -529,27 +533,26 @@ footer {
     margin-bottom: 4em;
     display: flex;
     font-size: 12px;    
-    background-color: #f2f2f2;
+    background-color: #f2f2f2;    
 }
 
 footer h3{
     font-weight: 800;
 }
 
-footer ul{
-    padding-left: 0px;
-    margin-right: 22em;    
+footer ul{    
+    padding-left: 0px;       
 }
 
 footer li{
     list-style-type: none;
-    font-size: 14px;        
-    margin-top: 1em;
+    font-size: 14px;
+    margin-top: 1em;    
 }
 
 footer a{
     text-decoration: none;
-    color: black;
+    color: black;   
 }
 
 footer li:hover{
@@ -559,6 +562,10 @@ footer li:hover{
 
 footer a:visited{
     color:black;    
+}
+
+.footer_links{
+    margin-right: 25em;
 }
 
 @media  screen and (max-width: 1412px) 
@@ -572,7 +579,35 @@ footer a:visited{
 {
     aside{
         width: 65%;
+    } 
+
+    .activites{
+        display: flex;
+        flex-direction: column;
+        
     }   
+    .group1{
+        margin-top: 1em;
+        justify-content: center;
+    }
+
+    .vieux_port{
+        margin-right: 2em;
+    }
+
+    .group2{
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .calanques{
+        margin-right: 2em;
+    }
+
+    .footer_links{
+        margin-right: 20em;
+    }
+       
 }
 
 @media screen and (max-width:1225px)
@@ -582,7 +617,11 @@ footer a:visited{
     }
 
     aside{
-        width: 75%;
+        width: 100%;
+    }
+
+    .footer_links{
+        margin-right: 15em;
     }
     
 }
@@ -620,11 +659,7 @@ footer a:visited{
         nav li{
             width: 200px;
             text-align: center;
-        }
-
-        nav a{
-            width: 100%;
-        }
+        }        
 
         #logo{
             align-self: flex-start;
@@ -644,8 +679,10 @@ footer a:visited{
         
       
         .topnav a{
-            margin-right: 0;            
-        }        
+            margin-right: 0; 
+                   
+        }  
+   
        
         .topnav a:hover{
             border-top: none;
@@ -777,22 +814,17 @@ footer a:visited{
         }
 
         .selection_populaires a{
-            width: 90%;
-        
+            width: 90%;        
         }
 
         .right_img{
-            width: 100%;
-        
+            width: 100%;        
         }
 
         .selection_populaires img{
             width: 100%;
-            max-width: 200px;
-             
-        }
-
-        
+            max-width: 200px;             
+        }       
 
         article{
             width: auto;
@@ -812,72 +844,85 @@ footer a:visited{
         }
 
         .selection_marseille{            
-            justify-content: space-around;
+            justify-content: space-evenly;
             position: relative;
-            left: -3em;
-        }
-
-        
+            
+        }        
 
         .hebergements{            
             display: flex;
             flex-direction: column-reverse;            
-        }        
+        } 
 
-        /*Activités*/
+}
 
-        section{
-            width: auto;
-            padding:0.5em;
-            margin: 0;
-        }
+@media screen and (max-width:824px)
+{
+        .footer_links{
+            margin-right: 5em;
+        }       
+}
 
-        section h2{
-            text-align: left;
-            margin-left: 0px;
-        }
-
-        .activites{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap-reverse;            
-        }
-
-        .activites a{
-            margin-top: 1em;
-        }
-
-        .activites img{
-            width: auto;
-            height: 102px;
-        }
-
-        .activites figure{
-            height:152px;            
-
-        }
-
-        .vieux_port img{
-            object-position: 0;
-            
-        }
-
-        .frioul img{
-            object-position: 0;
-        }
-
-        .calanques img{
-            object-position: 0 -15em;
-        }
-
-        .notre_dame img{
-            object-position: 0 -4em;
-        }
-
-        .longchamp img{
-            object-position: 0 -12em;
-        }
+@media screen and (max-width:700px)
+{
+    section{
         
+        padding:0.5em;
+        margin: 0;
+    }
+
+    section h2{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .activites{
+        display: flex;
+        flex-direction: column;
+            
+    }
+
+    .activites a{
+        margin-top: 1em;
+        
+    }
+
+    
+    .activites figure{        
+        height:152px;
+        width: 300px;       
+
+    }
+
+    .group1{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .group2{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vieux_port{
+        margin-right: 0;
+        
+        
+    }
+
+    .calanques{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:647px)
+{
+        .footer_links{
+            margin-right: 3em;
+        }
 }
 
 
@@ -920,4 +965,13 @@ footer a:visited{
             padding-left: 0;
         }
 }
+
+@media screen and (max-width:520px)
+{
+    #title{
+        text-align: center;
+    }
+}
+
+
 

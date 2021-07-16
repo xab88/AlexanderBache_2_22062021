@@ -1,7 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 1440px; 
-    min-width: 320px;
+    width: 1440px;
     margin: auto;
     margin-top: 2em;
 }
@@ -643,7 +642,7 @@ footer a:visited{
         }
 
         nav{   
-            width: 100%;         
+                     
             border-top: none;
             display: flex;
             flex-direction: column-reverse;
@@ -652,12 +651,13 @@ footer a:visited{
         nav ul{
            align-self: center; 
            padding-left: 0;
+          
            width: 400px;
                    
         }
 
         nav li{
-            width: 200px;
+            width: 300px;
             text-align: center;
         }        
 
@@ -668,32 +668,34 @@ footer a:visited{
         }
     
         #sign_in{
+            position:absolute;
+            right:10px;
+            top:18px;
             align-self: flex-end;
-            margin-right: 10px;            
+                        
         }      
     
-        .topnav {
-            border-bottom: 3px solid #f2f2f2;
-            padding-bottom: 1em;
-        }
-        
-      
+    
         .topnav a{
-            margin-right: 0; 
-                   
-        }  
-   
+            margin-right: 0;
+            padding-top: 3em;
+            padding-bottom: 1em;
+            display: block;  
+            border-bottom: 3px solid #f2f2f2; 
+
+        } 
        
         .topnav a:hover{
             border-top: none;
             padding-bottom: 1em;
             border-bottom: 3px solid #0065FC;
+            
         }
     
         .topnav a:focus{
             border-top: none;
-            border-bottom: 3px solid #0065FC;
-            font-weight: bold;
+            border-bottom: 3px solid #0065FC;            
+            padding-bottom: 1em;
         }
 
         .topnav a:active{
@@ -834,6 +836,10 @@ footer a:visited{
             background-color: white;
         }
 
+        .marseille{
+            padding-right: 0;
+        }
+
         .marseille h2{
             margin-left: 0.5em;
         }
@@ -845,7 +851,7 @@ footer a:visited{
 
         .selection_marseille{            
             justify-content: space-evenly;
-            position: relative;
+           
             
         }        
 
@@ -854,13 +860,18 @@ footer a:visited{
             flex-direction: column-reverse;            
         } 
 
+        .footer_links{
+            margin-right: 10em;
+        }
+
 }
 
 @media screen and (max-width:824px)
 {
         .footer_links{
             margin-right: 5em;
-        }       
+        }   
+
 }
 
 @media screen and (max-width:700px)
@@ -915,6 +926,10 @@ footer a:visited{
     .calanques{
         margin-right: 0;
     }
+
+    footer{
+        margin-top: 2em;
+    }
 }
 
 
@@ -931,8 +946,17 @@ footer a:visited{
 {
         .selection_marseille{
             flex-direction: column;
-            align-items: center;
+            
+            
+            
         }
+
+        .selection_marseille figure{
+            width: 350px;           
+            
+        }
+
+        
 
         /*Footer*/
     
@@ -967,11 +991,38 @@ footer a:visited{
 }
 
 @media screen and (max-width:520px)
-{
-    #title{
-        text-align: center;
-    }
+{            
+        #title{
+            text-align: center;
+        }
 }
 
+@media screen and (max-width:480px)
+{
+    nav li{
+        width: 150px;
+    }
+
+    nav ul{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+
+@media screen and (max-width:400px)
+{       
+        #sign_in{
+            
+        }
+       
+        .selection_marseille figure{
+            width: 280px;
+        }
+}
+ 
 
 

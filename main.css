@@ -1,6 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 1440px;    
+    width: 1440px; 
+    min-width: 320px;   
     margin: auto;
     margin-top: 2em;
 }
@@ -16,7 +17,7 @@ header{
 
 nav{    
     display: flex;    
-    font-size: 15px;
+    font-size: 16px;
 }
 
  nav ul{
@@ -62,19 +63,19 @@ nav a{
 .topnav a:hover{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 3em;
+    padding-top: 2.2em;
 }
 
 .topnav a:focus{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 3em;
+    padding-top: 2.2em;
 }
 
 .topnav a:active{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 3em;
+    padding-top: 2.2em;
     font-weight: bold;
 }
 
@@ -92,39 +93,41 @@ nav a{
 }
 
 #title{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bolder;
     margin-top: 0.2em;
     margin-bottom: 4px;
 }
 
 #soustitre{
-    font-size: 16.3px;
+    font-size: 13px;
     margin-top: 0px;
 }
 
 /* Search Bar look out for class and id*/
 
 .search_bar{
-    display:inline-flex;
+    display: flex;
     align-items: center;
+    
 }
 
-
-
-#search_pointer{
-    padding: 18px 17px 13.5px 16px;
+#search_pointer {
+    padding: 12px 10px 9px 10px;
     background-color: #f2f2f2;
     border-radius: 11px 0 0 11px;
-    color: black;    
+    color: black; 
+       
 }
 
 #search_bar{    
-    border: 2px solid #f2f2f2;    
+    border: 1px solid #f2f2f2;    
     margin-right: 0;
-    padding: 16px 10px 15px 10px;
+    padding: 7px 8px 8px 8px;
     border-right: none;  
-    font-size: 13px;    
+    font-size: 16px; 
+    font-weight: 800;  
+    
 }
 
 #search_bar:focus{
@@ -133,18 +136,10 @@ nav a{
 
 .search_bar ::placeholder{
     font-family: 'Raleway', sans-serif;
-    opacity: 0.9;
-    font-size: 13px;
-}
-
-.search_bar ::-webkit-input-placeholder{
+    font-size: 16px;
     color: black;
     font-weight: 800;
-}
-
-.search_bar ::-moz-placeholder{
-    color: black;
-    font-weight: 800;
+    opacity: 1;
 }
 
 
@@ -154,9 +149,10 @@ nav a{
     position: relative;
     left: -4px;
     margin-left: 0;
-    padding:15px 20px 15px 20px; 
-    color: #DEEBFF; 
-    font-size: 17px;   
+    padding: 12px 10px 10px 10px;
+     
+    color: white; 
+    font-size: 16px;   
     font-weight: 600;
     background-color: #0065FC;
     border-radius: 0 11px 11px 0;
@@ -170,18 +166,21 @@ nav a{
 /*Filters*/
 
 #filter_title{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .filters ul{
     list-style-type: none;
     display: flex;
     font-weight: 900;
+    
+    
 }
 
 .filters{
     display: flex;
-    align-items: center;        
+    align-items: center;
+            
 }
 
 .filters i{
@@ -190,12 +189,12 @@ nav a{
     color: #0065FC;
     margin-right: .8em;    
     border-radius: 50%;
-    padding: 13px;
+    padding: 10px;
     background-color: #DEEBFF;    
 }
 
 .filters li{   
-    font-size: 15px;
+    font-size: 16px;
     margin-right: 2em;
     border: 2px solid #dfdfdf;
     border-radius: 40px;
@@ -296,7 +295,7 @@ article{
 
 .selection_marseille figure{
     border-radius: 20px;
-    border: 4px solid white;
+    border: 5px solid white;
     display: flex;
     flex-direction: column-reverse;
     height: 170px;
@@ -376,14 +375,14 @@ aside{
     object-fit: cover;
     object-position: center;  
     overflow: hidden;  
-    border-radius: 20px 0 0 20px;    
+    border-radius: 15px 0 0 15px;    
 }
 
 .selection_populaires figure{
     display: flex;
     flex-direction: row-reverse;    
     border-radius: 20px;
-    border: 4px solid white;    
+    border: 5px solid white;    
 }
 
 #populaires_icone{
@@ -635,13 +634,9 @@ footer a:visited{
 
 @media screen and (max-width: 1000px)
 {
-        body{
-            width: auto;            
-            margin-left: 0;
-            margin-top: auto;            
-        }
-
-        
+        body{            
+            margin-left: 0;            
+        }       
 
 
     /*title*/
@@ -653,21 +648,25 @@ footer a:visited{
 
         #soustitre{
             font-size: 13px;
-            margin-top: 0.8em;
+            
+            
         }
     
     /*Search bar*/
 
+        .search_bar{
+            white-space: nowrap;
+        }
        
         #search_bar{
-            border: 1px solid #f2f2f2;
-            padding-top: 13px;
-            width: auto;           
+            width: auto; 
+            padding: 6px 8px 8px 8px;
+                     
         }        
              
         #search_pointer{
-            padding-bottom: 13px;
-            padding-top: 13px;
+            padding: 10px 10px 10px 10px;
+            
         }
     
         .search_button{
@@ -679,9 +678,9 @@ footer a:visited{
             position: relative;
             left: -13px;
             bottom: -1px;
-            margin-left: 0;
-            padding:16px;
-            color: #DEEBFF;    
+            margin: 0;
+            padding:16px 16px 13px 16px;
+            color: white;    
             font-weight: 600;
             background-color: #0065FC;
             border-radius: 11px 11px 11px 11px;
@@ -800,136 +799,145 @@ footer a:visited{
         .footer_links{
             margin-right: 10em;
         }
-
 }
 
 @media screen and (max-width:824px)
 {       
-    .top_page{           
-        flex-direction: column-reverse;
-        align-items: center;            
-        margin-top: 1em;
-    }
-
-    nav{                      
-        border-top: none;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    nav ul{
-       align-self: center; 
-       padding-left: 0;          
-       width: 400px;
-               
-    }
-
-    nav li{
-        width: 300px;
-        text-align: center;
-    }        
-
-    #logo{
-        align-self: flex-start;
-        position: absolute;
-        top: -3px;           
-    }
-
-    #sign_in{
-        position:absolute;
-        right:10px;
-        top:18px;
-        align-self: flex-end;
-                    
-    }      
-
-
-    .topnav a{
-        margin-right: 0;
-        padding-top: 3em;
-        padding-bottom: 1em;
-        display: block;  
-        border-bottom: 3px solid #f2f2f2; 
-
-    } 
-   
-    .topnav a:hover{
-        border-top: none;
-        padding-bottom: 1em;
-        border-bottom: 3px solid #0065FC;
+        body{
+            margin-top: auto;
+        }
+    
+        .top_page{           
+            flex-direction: column-reverse;
+            align-items: center;            
+            margin-top: 1em;
+        }
+    
+        nav{                      
+            border-top: none;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        nav ul{
+           
+           padding-left: 0;          
+           width: 400px;
+                   
+        }
+    
+        nav li{
+            width: 300px;
+            text-align: center;
+        }        
+    
+        #logo{
+            align-self: flex-start;
+            position: absolute;
+            top: -3px;           
+        }
+    
+        #sign_in{
+            position:absolute;
+            right:10px;
+            top:18px;
+            align-self: flex-end;                    
+        } 
         
-    }
-
-    .topnav a:focus{
-        border-top: none;
-        border-bottom: 3px solid #0065FC;            
-        padding-bottom: 1em;
-    }
-
-    .topnav a:active{
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-        font-weight: bold;
-    }
-
+        #sign_in a{
+            padding-bottom: 0;
+        }
+    
+    
+        .topnav a{
+            margin-right: 0;
+            padding-top: 2.2em;
+            padding-bottom: 1em;
+            display: block;  
+            border-bottom: 3px solid #f2f2f2; 
+    
+        } 
+       
+        .topnav a:hover{
+            border-top: none;
+            padding-bottom: 1em;
+            border-bottom: 3px solid #0065FC;
+            
+        }
+    
+        .topnav a:focus{
+            border-top: none;
+            border-bottom: 3px solid #0065FC;            
+            padding-bottom: 1em;
+        }
+    
+        .topnav a:active{
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
+            font-weight: bold;
+        }
+    
         .footer_links{
             margin-right: 5em;
-        }   
+        }  
+
+
+
 
 }
 
 @media screen and (max-width:700px)
 {
-    section{        
-        padding:0.5em;
-        margin: 0;
-    }
-
-    section h2{
-        text-align: left;
-        margin-left: 0px;
-    }
-
-    .activites{
-        display: flex;
-        flex-direction: column;            
-    }
-
-    .activites a{
-        margin-top: 1em;        
-    }
-
+        section{        
+            padding:0.5em;
+            margin: 0;
+        }
     
-    .activites figure{        
-        height:152px;
-        width: 300px;
-    }
-
-    .group1{
-        margin-top: 0;
-        flex-direction: column;
-        align-items: center;
-    }
+        section h2{
+            text-align: left;
+            margin-left: 0px;
+        }
     
-    .group2{
-        margin-top: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vieux_port{
-        margin-right: 0;       
-    }
-
-    .calanques{
-        margin-right: 0;
-    }
-
-    footer{
-        margin-top: 2em;
-    }
-}
-
+        .activites{
+            display: flex;
+            flex-direction: column;            
+        }
+    
+        .activites a{
+            margin-top: 1em;        
+        }
+    
+        
+        .activites figure{        
+            height:152px;
+            width: 300px;
+        }
+    
+        .group1{
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .group2{
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .vieux_port{
+            margin-right: 0;       
+        }
+    
+        .calanques{
+            margin-right: 0;
+        }
+    
+        footer{
+            margin-top: 2em;
+        }
+}    
+    
 
 @media screen and (max-width:647px)
 {
@@ -1003,17 +1011,28 @@ footer a:visited{
 }
 
 @media screen and (max-width:480px)
-{
+{       
+
+        #sign_in a{
+            position: relative;
+            right: -1em;
+        }
+
         nav li{
             width: 150px;
+        }
+
+        #soustitre{
+            text-align: center;
         }
     
         nav ul{
             width: auto;
             display: flex;
             justify-content: center;
-        }  
+        } 
         
+       
         .selection_marseille figure{
             margin-left: 2em;
         }
@@ -1043,13 +1062,29 @@ footer a:visited{
 
 @media screen and (max-width:350px)
 {
+
+        #sign_in a{
+            position: relative;
+            right: -1em;
+        }
+
         nav {
             width: 288px;
         }
+
+        
 
         .selection_marseille a{
             margin-left: 1em;
         }
         
+}
+
+@media screen and (max-width:320px)
+{
+        html, body{
+            min-width: 320px;
+            width:100%;
+        }
 }
 

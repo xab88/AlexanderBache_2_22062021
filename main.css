@@ -1,7 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     width: 1440px; 
-    min-width: 320px;   
+    min-width: 320px;      
     margin: auto;
     margin-top: 2em;
 }
@@ -93,14 +93,14 @@ nav a{
 }
 
 #title{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
     margin-top: 0.2em;
     margin-bottom: 4px;
 }
 
 #soustitre{
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 0px;
 }
 
@@ -113,7 +113,7 @@ nav a{
 }
 
 #search_pointer {
-    padding: 12px 10px 9px 10px;
+    padding: 12px 12px 9px 12px;
     background-color: #f2f2f2;
     border-radius: 11px 0 0 11px;
     color: black; 
@@ -193,13 +193,25 @@ nav a{
     background-color: #DEEBFF;    
 }
 
+#money{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#child{
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
 .filters li{   
     font-size: 16px;
     margin-right: 2em;
     border: 2px solid #dfdfdf;
     border-radius: 40px;
     border-left: none;
-    padding: 0 20px 0 0;      
+    padding: 0 20px 0 0;
+    
+    
 }
 
 .filters a{
@@ -409,12 +421,13 @@ aside{
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 0.3em;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .selection_populaires p{
     margin-top: 0px;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .right_img{
@@ -646,21 +659,19 @@ footer a:visited{
             font-size: 18px;            
         }
 
+       
+
         #soustitre{
-            font-size: 13px;
-            
-            
+            font-size: 13px;           
         }
     
     /*Search bar*/
 
-        .search_bar{
-            white-space: nowrap;
-        }
+       
        
         #search_bar{
             width: auto; 
-            padding: 6px 8px 8px 8px;
+            padding: 6px 15px 8px 8px;
                      
         }        
              
@@ -745,12 +756,12 @@ footer a:visited{
         }
 
         .selection_populaires h3{
-            font-size: 15px;
+            font-size: 18px;
 
         }
 
         .selection_populaires p{
-            font-size: 12px;
+            font-size: 16px;
         }
 
         .selection_populaires a{
@@ -819,11 +830,9 @@ footer a:visited{
             flex-direction: column-reverse;
         }
     
-        nav ul{
-           
+        nav ul{           
            padding-left: 0;          
-           width: 400px;
-                   
+           width: 400px;                   
         }
     
         nav li{
@@ -951,17 +960,13 @@ footer a:visited{
 @media screen and (max-width:600px)
 {
         .selection_marseille{
-            flex-direction: column;            
+            flex-direction: column;  
+            align-items: center;
+                      
         }
 
         .selection_marseille figure{
-            width: 350px;
-            margin-left: 5em; 
-                       
-        }  
-
-        .selection_marseille a{
-            align-items: center;
+            width: 350px; 
         }
 
         
@@ -999,27 +1004,17 @@ footer a:visited{
 @media screen and (max-width:520px)
 {            
         #title{
-            text-align: center;
-            margin-right: 10em;
-            
-            
+            text-align: center;    
         }
 
-        .selection_marseille figure{
-            margin-left: 3em;
-        }
+        
 }
 
 @media screen and (max-width:480px)
-{       
-
-        #sign_in a{
-            position: relative;
-            right: -1em;
-        }
+{          
 
         nav li{
-            width: 150px;
+            width: 50%;
         }
 
         #soustitre{
@@ -1031,60 +1026,63 @@ footer a:visited{
             display: flex;
             justify-content: center;
         } 
-        
+
+        .search_bar{
+            justify-content: center;
+        }
+
+        #search_bar{
+            width: 170px;
+        }
+
+        .filters li{
+            font-size: 14px;
+        }        
        
-        .selection_marseille figure{
-            margin-left: 2em;
+        
+
+        aside{
+            width: 100%;
         }
+               
 }  
-
-@media screen and (max-width:440px)
-{
-        .selection_marseille figure{
-            margin-left: 0;
-
-        }
-}
     
     
 @media screen and (max-width:400px)
-{         
-        nav ul{
-            position: relative;
-            left: -0.8em;
+{       
+        header{
+            margin-left: 1em;
+            margin-right: 1em;
+        } 
+        
+        #title{
+            font-size: 20px;
+        }
+
+        #search_pointer{
+            margin-top: 17px;
         }
        
         .selection_marseille figure{
             width: 280px;
             
         }
+
+        .selection_populaires h3{
+            font-size: 16px ;
+        }
+
+        .selection_populaires p{
+            font-size: 14px;
+        }
 }
 
 @media screen and (max-width:350px)
 {
-
-        #sign_in a{
-            position: relative;
-            right: -1em;
-        }
-
         nav {
             width: 288px;
-        }
-
-        
-
-        .selection_marseille a{
-            margin-left: 1em;
-        }
-        
+        }        
 }
 
-@media screen and (max-width:320px)
-{
-        html, body{
-            min-width: 320px;
-            width:100%;
-        }
-}
+
 

@@ -1,7 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     width: 1440px; 
-          
+    min-width: 320px;
     margin: auto;
     margin-top: 2em;
 }
@@ -293,7 +293,7 @@ figure:visited{
     color: #0065FC;   
 }
 
-#greystar{
+.greystar{
     color: #dfdfdf;
 }
 
@@ -475,7 +475,7 @@ section h2{
 
 .activites{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 .activites a{
@@ -490,12 +490,13 @@ section h2{
 .bigcolumn{
     display: flex;
     flex-direction: column; 
-    border-radius: 20px;  
+    border-radius: 20px; 
+    margin-right: 1em; 
 }
 
 .bigcolumn img{
     height: 350px;   
-    width: 300px; 
+    width: 320px; 
     object-fit: cover;
     object-position: center;
     overflow: hidden;
@@ -510,7 +511,7 @@ section h2{
 
 .smallcolumn img{
     
-    width: 300px;
+    width: 320px;
     object-fit: cover; 
     object-position: center;
     overflow: hidden;
@@ -526,14 +527,15 @@ section h2{
 .group1{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 1em;
 }
 
 
 .group2{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bigrow{
@@ -861,7 +863,7 @@ footer a:visited{
     
         #sign_in{
             position:absolute;
-            right:10px;
+            right: 10px;
             top:18px;
             align-self: flex-end;                    
         } 
@@ -1116,6 +1118,13 @@ footer a:visited{
         .activites img{
             width: 300px;
         }
+
+        #sign_in{
+            position:absolute;
+            right: right;
+        }
+
+
 }
 
 

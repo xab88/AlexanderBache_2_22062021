@@ -111,12 +111,8 @@ nav a{
 .search_bar{
     display: flex; 
     margin-top: 15px; 
-    padding: 10px 0 10px 0;
-         
+    padding: 10px 0 10px 0;         
 }
-
-
-
 
 .search_pointer {
     background-color: #f2f2f2;
@@ -152,7 +148,6 @@ nav a{
     opacity: 1;
 }
 
-
 /*search button*/
 
 .search_button{
@@ -183,13 +178,11 @@ nav a{
     list-style-type: none;
     display: flex;
     font-weight: 900;    
-    
 }
 
 .filters{
     display: flex;
-    align-items: center;
-            
+    align-items: center;            
 }
 
 .filters i{
@@ -218,9 +211,7 @@ nav a{
     border: 2px solid #dfdfdf;
     border-radius: 40px;
     border-left: none;
-    padding: 0 20px 0 0;
-    
-    
+    padding: 0 20px 0 0;    
 }
 
 .filters a{
@@ -312,8 +303,7 @@ article{
 .selection_marseille{   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
-       
+    justify-content: space-around;        
 }
 
 .selection_marseille a{
@@ -617,9 +607,9 @@ footer a:visited{
 
     .activites{
         display: flex;
-        flex-direction: column;
-        
-    }   
+        flex-direction: column;        
+    }  
+
     .group1{
         margin-top: 1em;
         justify-content: center;
@@ -662,9 +652,6 @@ footer a:visited{
 
 @media screen and (max-width: 1000px)
 {
-              
-
-
     /*title*/
 
         #title{
@@ -727,15 +714,13 @@ footer a:visited{
             border-radius: 0;
         }
 
-        .selection_populaires{ 
-            
+        .selection_populaires{             
             padding: 2px;            
             align-items: center;
         }
 
         .selection_populaires h3{
             font-size: 18px;
-
         }
 
         .selection_populaires p{
@@ -772,8 +757,7 @@ footer a:visited{
         }
 
         .selection_marseille{            
-            justify-content: space-around;
-                        
+            justify-content: space-around;                        
         }  
         
         .selection_marseille a{
@@ -843,15 +827,13 @@ footer a:visited{
             padding-top: 2.2em;
             padding-bottom: 1em;
             display: block;  
-            border-bottom: 3px solid #f2f2f2; 
-    
+            border-bottom: 3px solid #f2f2f2;     
         } 
        
         .topnav a:hover{
             border-top: none;
             padding-bottom: 1em;
-            border-bottom: 3px solid #0065FC;
-            
+            border-bottom: 3px solid #0065FC;            
         }
     
         .topnav a:focus{
@@ -961,21 +943,18 @@ footer a:visited{
 
 @media screen and (max-width:600px)
 {       
-        .marseille{
-            
+        .marseille{            
             align-content: center;
         }
 
 
         .selection_marseille{
             flex-direction: column;
-            align-items: center; 
-                         
+            align-items: center;                         
         }
         
         .selection_marseille a{
-            width: 350px;
-            
+            width: 350px;            
         }
 
         
@@ -1021,8 +1000,7 @@ footer a:visited{
 }
 
 @media screen and (max-width:480px)
-{          
-
+{        
         nav li{
             width: 50%;
         }
@@ -1048,8 +1026,6 @@ footer a:visited{
         .filters li{
             font-size: 14px;
         }        
-       
-        
 
         aside{
             width: 100%;
@@ -1078,8 +1054,7 @@ footer a:visited{
         }
 
         .selection_populaires h3{
-            font-size: 16px ;
-            
+            font-size: 16px;            
         }
 
         .selection_populaires p{

@@ -580,7 +580,7 @@ footer a{
 }
 
 footer li:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 

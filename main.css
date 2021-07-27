@@ -541,8 +541,7 @@ section h2{
     background-color: white;
     font-size: 14px;
     display: flex;
-    align-items: center;
-    height: 50px;    
+    align-items: center;   
     padding-left: 0.6em;
 }
 
